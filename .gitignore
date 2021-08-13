@@ -1,0 +1,7 @@
+*__pycache__*
+*.ipynb_checkpoints
+*.idea
+/data/
+/pruned_models/
+/trained_imgnette_models/
+/experiments/data/
