@@ -9,9 +9,6 @@ import pandas as pd
 # my own functions
 from helpers import set_device,\
     imagenette_dataloader,\
-    disable_params_grad,\
-    enable_params_grad,\
-    get_params_grad,\
     create_optimizer,\
     train_model, \
     test_model,\
@@ -90,9 +87,6 @@ def pruning_experiments(compression_rate):
             print('--- Acc before Finetuning:---')
             test_model(model, testloader, device)
 
-            # FINETUNING
-            # SET MODEL PARAMS AS ARG FOR OPTIMIZER - not params_w_grad (incl. weight_orig but not pruned weight)
-            raise Exception('Changing lr to 0.01 is probably clever')
             optimizer = create_optimizer(list(model.parameters()), 'SGD', 0.001, 0.9)   # same settings as in VGG Training so far
             epochs = 50
             criterion = nn.CrossEntropyLoss()
