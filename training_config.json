@@ -1,0 +1,107 @@
+{
+    "run1": {
+        "batch_size": 32,
+        "epochs": 20,
+        "pretrained":  false,
+        "vgg_no_train_parts": [
+
+        ],
+        "optimizer": "SGD",
+        "learning_rate": 0.01,
+        "momentum": 0.9,
+        "model_path": "trained_imgnette_models/vgg16_20ep_all_layers.pt",
+        "results_path": "training_output.json"
+    },
+    "run2": {
+        "batch_size": 32,
+        "epochs": 20,
+        "pretrained":  true,
+        "vgg_no_train_parts": [
+            "features",
+            "classifier"
+        ],
+        "optimizer": "SGD",
+        "learning_rate": 0.01,
+        "momentum": 0.9,
+        "model_path": "trained_imgnette_models/run2_pretrained_20ep_ft.pt",
+        "results_path": "training_output.json"
+    },
+    "run3": {
+        "batch_size": 64,
+        "epochs": 20,
+        "pretrained":  false,
+        "vgg_no_train_parts": [
+
+        ],
+        "optimizer": "SGD",
+        "learning_rate": 0.02,
+        "momentum": 0.5,
+        "model_path": "trained_imgnette_models/run3_vgg16_20ep_all_layers.pt",
+        "results_path": "training_output.json"
+    },
+    "run4": {
+        "batch_size": 64,
+        "epochs": 100,
+        "pretrained":  true,
+        "vgg_no_train_parts": [
+            "features"
+        ],
+        "optimizer": "SGD",
+        "learning_rate": 0.0001,
+        "momentum": 0.9,
+        "model_path": "trained_imgnette_models/run4_vgg_100ep_pre_classifier_only.pt",
+        "results_path": "training_output.json"
+    },
+    "run5": {
+        "batch_size": 16,
+        "epochs": 100,
+        "pretrained":  false,
+        "vgg_no_train_parts": [
+
+        ],
+        "optimizer": "SGD",
+        "learning_rate": 0.001,
+        "momentum": 0.5,
+        "model_path": "trained_imgnette_models/run5_vgg_100ep_all_layers.pt",
+        "results_path": "training_output.json"
+    },
+    "run6": {
+        "batch_size": 16,
+        "epochs": 100,
+        "pretrained":  false,
+        "vgg_no_train_parts": [
+
+        ],
+        "optimizer": "SGD",
+        "learning_rate": 0.01,
+        "momentum": 0.5,
+        "model_path": "trained_imgnette_models/run6_vgg_100ep_all_layers.pt",
+        "results_path": "training_output.json"
+    },
+    "run7": {
+        "batch_size": 16,
+        "epochs": 100,
+        "pretrained":  false,
+        "vgg_no_train_parts": [
+
+        ],
+        "optimizer": "SGD",
+        "learning_rate": 0.01,
+        "momentum": 0.5,
+        "model_path": "trained_imgnette_models/run7_vgg_100ep_all_layers.pt",
+        "results_path": "training_output.json"
+    },
+    "run8": {
+        "batch_size": 64,
+        "epochs": 100,
+        "pretrained":  true,
+        "vgg_no_train_parts": [
+
+        ],
+        "optimizer": "SGD",
+        "learning_rate": 0.001,
+        "momentum": 0.9,
+        "model_path": "trained_imgnette_models/run8_vgg_100ep_ft.pt",
+        "results_path": "training_output.json"
+    }
+}
