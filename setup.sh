@@ -2,7 +2,6 @@
 # script creates necessary folders, downloads imagenette and installs a new conda environment
 
 mkdir pruned_models
-mkdir pruning_results
 mkdir trained_imgnette_models
 mkdir data
 echo "created folders"
