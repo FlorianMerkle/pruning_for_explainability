@@ -1,0 +1,8 @@
+,pruning_method,sparsity,modules_pruned_and_finetuned,pruned_model_path,batch_size,max_epochs_finetuned,early_stopping_epoch,training_accuracy,validation_accuracy,time_elapsed,test_top1_accuracy,test_top5_accuracy
+0,local_magnitude_unstructured,1,-,-,-,-,-,0.99,0.98,-,0.97,1.00
+1,local_magnitude_unstructured,2,features,pruned_models/local_magnitude_unstructured-pretrained/2-compression_02-05-2021_09-18-46.pt,64,50,0,0.988383144999472,0.984,24m 24s,0.9728571176528931,0.9989285469055176
+2,local_magnitude_unstructured,4,features,pruned_models/local_magnitude_unstructured-pretrained/4-compression_02-05-2021_09-48-06.pt,64,50,2,0.9824691097264758,0.9733333333333334,28m 33s,0.9592856764793396,0.9982143044471741
+3,local_magnitude_unstructured,8,features,pruned_models/local_magnitude_unstructured-pretrained/8-compression_02-05-2021_10-42-19.pt,64,50,13,0.9761326433625515,0.9582222222222222,53m 27s,0.9410713911056519,0.9975000023841858
+4,local_magnitude_unstructured,16,features,pruned_models/local_magnitude_unstructured-pretrained/16-compression_02-05-2021_12-05-17.pt,64,50,26,0.9707466469532158,0.9457777777777778,82m 11s,0.9339285492897034,0.9971428513526917
+5,local_magnitude_unstructured,32,features,pruned_models/local_magnitude_unstructured-pretrained/32-compression_02-05-2021_13-28-20.pt,64,50,28,0.9448727426338579,0.9128888888888889,82m 18s,0.9007142782211304,0.9939285516738892
+6,local_magnitude_unstructured,64,features,pruned_models/local_magnitude_unstructured-pretrained/64-compression_02-05-2021_14-49-19.pt,64,50,27,0.9134016263597001,0.896,80m 14s,0.8725000023841858,0.9925000071525574
