@@ -183,7 +183,7 @@ def train_model(model, trainloader, validloader, num_epochs, optimizer, criterio
             if phase == 'val':
                 val_acc_history.append(epoch_acc)
                 if epoch_acc > best_val_acc * improving_delta:
-                    print('INFO: Epoch Acc {} better than current Val Acc {} by {}'.format(epoch_acc, best_val_acc, improving_delta))
+                    print('INFO: Epoch Acc {} better than current Val Acc {} by {}'.format(epoch_acc, best_val_acc, epoch_acc-best_val_acc))
                     best_val_acc = epoch_acc
                     best_model_wts = copy.deepcopy(model.state_dict())
                     epochs_no_improv = 0
