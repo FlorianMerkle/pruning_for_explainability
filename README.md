@@ -1,5 +1,5 @@
 # pruning_for_explainability
-This is the accompanying repository of the master's thesis with the title "How much pruning is too much? The effects of neural network pruning on explainability". The contents of this repository allow to recreate the results of our experiments.
+This is the accompanying repository to the research article Less is More: The Influence of Pruning on the Explainability of CNNs ([arxiv](https://arxiv.org/abs/2302.08878)), which is currently under review at IEEE Access. The contents of this repository allow to recreate the results of our experiments.
 
 
 ## Setup
